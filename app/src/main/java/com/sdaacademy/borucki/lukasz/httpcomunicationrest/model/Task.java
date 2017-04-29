@@ -11,6 +11,9 @@ public class Task {
         this.value = value;
     }
 
+    public Task() {
+    }
+
     public boolean isCompleted() {
 
         return completed;
