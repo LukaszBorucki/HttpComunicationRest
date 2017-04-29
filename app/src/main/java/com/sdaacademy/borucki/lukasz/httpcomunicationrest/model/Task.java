@@ -2,12 +2,12 @@ package com.sdaacademy.borucki.lukasz.httpcomunicationrest.model;
 
 public class Task {
     private boolean completed;
-    private long user;
+    private long id;
     private String value;
 
-    public Task(boolean completed, long user, String value) {
+    public Task(boolean completed, long id, String value) {
         this.completed = completed;
-        this.user = user;
+        this.id = id;
         this.value = value;
     }
 
@@ -23,12 +23,12 @@ public class Task {
         this.completed = completed;
     }
 
-    public long getUser() {
-        return user;
+    public long getId() {
+        return id;
     }
 
-    public void setUser(long user) {
-        this.user = user;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getValue() {
