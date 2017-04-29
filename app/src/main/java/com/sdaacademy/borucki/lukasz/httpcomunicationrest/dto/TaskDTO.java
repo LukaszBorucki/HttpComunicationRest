@@ -6,6 +6,9 @@ public class TaskDTO {
     private long id;
     private String value;
 
+    public TaskDTO() {
+    }
+
     public TaskDTO(boolean completed, long user, long id, String value) {
         this.completed = completed;
         this.user = user;
@@ -14,7 +17,6 @@ public class TaskDTO {
     }
 
     public boolean isCompleted() {
-
         return completed;
     }
 
