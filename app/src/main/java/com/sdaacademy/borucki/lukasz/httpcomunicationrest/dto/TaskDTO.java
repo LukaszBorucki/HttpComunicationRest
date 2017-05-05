@@ -2,17 +2,23 @@ package com.sdaacademy.borucki.lukasz.httpcomunicationrest.dto;
 
 public class TaskDTO {
     private boolean completed;
-    private long user;
-    private long id;
+    private Long user;
+    private Long id;
     private String value;
 
     public TaskDTO() {
     }
 
-    public TaskDTO(boolean completed, long user, long id, String value) {
+    public TaskDTO(boolean completed, Long user, Long id, String value) {
         this.completed = completed;
         this.user = user;
         this.id = id;
+        this.value = value;
+    }
+
+    public TaskDTO(boolean completed, Long user, String value) {
+        this.completed = completed;
+        this.user = user;
         this.value = value;
     }
 
@@ -28,7 +34,7 @@ public class TaskDTO {
         return user;
     }
 
-    public void setUser(long user) {
+    public void setUser(Long user) {
         this.user = user;
     }
 
@@ -36,7 +42,7 @@ public class TaskDTO {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

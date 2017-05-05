@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="10dp">
 
     <TextView
@@ -12,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:gravity="end"
-        android:text="12."
+        android:focusable="false"
         android:textSize="18sp" />
 
 
@@ -26,10 +25,10 @@
         android:layout_toRightOf="@+id/singleRowNo"
         android:layout_toStartOf="@+id/checkBox"
         android:paddingStart="10dp"
+        android:focusable="false"
         android:paddingLeft="10dp"
         android:paddingEnd="10dp"
         android:paddingRight="10dp"
-        android:text="Simple task TODO"
         android:textSize="18sp" />
 
     <CheckBox
@@ -37,6 +36,7 @@
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:focusable="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true" />
 </RelativeLayout>

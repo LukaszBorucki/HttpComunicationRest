@@ -25,5 +25,8 @@ public class Mapper {
         return resultList;
     }
 
+    public static TaskDTO fromTaskToTaskDTO(Task task) {
 
+        return new TaskDTO(task.isCompleted(), 5L, task.getId(), task.getValue());
+    }
 }
